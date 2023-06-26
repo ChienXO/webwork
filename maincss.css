@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif SC', serif;
+}
+html {
+    background-color: #e1e1e1;
+    scroll-behavior: smooth;
+  }
+  .sybtn a{
+    display: inline-block;
+    text-decoration: none;
+    position: fixed;
+    bottom: 5%;
+    left: 2%;
+    font-family: heiti;
+    color: rgb(246, 245, 244);
+    border: 4px solid  #090909;
+    padding: 0.6rem 0.3rem;
+    border-radius: 5rem;
+    font-size: 1rem;
+    background:#080808;
+    cursor: pointer;
+     -webkit-transition: 0.3s;
+    transition: 0.5s;
+  }
+  .sybtn a:hover{
+    border: 2px solid rgb(124, 124, 122);
+    color: #080808;
+    background: transparent;
+   
+  }
+  
+section{
+    height: 745px;
+    width: 100%;
+}
+.header{
+    background-image:url( "./shouye1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    width: 90%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0% 10%;
+  }
+  .header nav h2 {
+    font-size: 40px;
+    color: rgb(74, 73, 73);
+    margin-top: 1%;
+  }
+  
+  .header nav h2 span {
+    font-family: "微软雅黑";
+    font-size: 45px;
+    color: #080808;
+  }
+  
+  .header nav #navLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .header nav #navLinks a {
+    text-decoration: none;
+    color: rgb(69, 69, 66);
+    font-size: 1.2rem;
+    padding: .5rem .75rem;
+  }
+  
+  .header nav #navLinks a::after {
+    display: block;
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color:  #080808;
+    margin: auto;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  
+  .header nav #navLinks a:hover::after {
+    width: 100%;
+  }
+
+  .header .text-box {
+    text-align: center;
+    color: rgb(126, 124, 122);
+    margin: 10%;
+  }
+  
+  .header .text-box h1 {
+    background-clip: text;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    opacity: 0.6;
+    -webkit-transition: 2s;
+        transition: 2s;
+    font-size: clamp(7rem, 5vw, 5rem);
+  }
+  
+  .header .text-box h1 .pulser {
+    
+    display: inline-block;
+    color: #0d0d0d;
+    border-radius: 50%;
+  }
+
+  .header nav .fa-bars,
+.header nav .fa-xmark {
+  color: antiquewhite;
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+  .header .text-box p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(212, 215, 215);
+    margin: 0.7rem 0 2.5rem;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+  }
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    font-family: heiti;
+    color: rgb(131, 130, 128);
+    border: 2px solid  #090909;
+    padding: 0.7rem 2.2rem;
+    border-radius: 2rem;
+    font-size: .8rem;
+    background: transparent;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+.hero-btn:hover {
+    border: 2px solid rgb(124, 124, 122);
+    background:  #8c8787;
+  }
+
+
+ #introduction {
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 10%;
+  text-align: center;
+}
+
+h1 {
+  color:  rgb(253, 249, 243);
+  font-size: 3rem;
+  text-shadow: 3px 3px 5px rgba(15, 14, 14, 0.5);
+  margin-top: 5%;
+}
+
+p {
+  color: rgb(198, 197, 195);
+  font-size: .9rem;
+  font-family: heiti;
+  line-height: 1.5rem;
+  padding: 0.7rem;
+}
+
+#introduction .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 3%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  #introduction .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+
+#introduction .row .col {
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 25%;
+  background-color: transparent;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#introduction .row .col:hover{
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 40%;
+  box-shadow: 5px 5px 25px #090909;
+  font-size: 1.2rem;
+}
+
+#introduction .row .col h3 {
+  margin: 0;
+  padding: 0.5rem;
+  color: rgb(66, 65, 64);
+  background-color:  #b7b3b3;
+  border-top-left-radius: .8rem;
+  border-top-right-radius: .8rem;
+}
+
+#introduction .row .col p {
+  padding: 2rem;
+}
+  
+
+#member {
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    text-align: center;
+  }
+  #member .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #solo {
+    width: 80%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 10%;
+    text-align: center;
+  }
+  #solo .row{
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 1%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  }
+ 
+#solo .row .col{
+    text-align: center;
+    margin-top: 8%;
+    display: flex;
+}
+#solo .row .col .songs{
+    width: 25%;
+    text-align: center;
+    margin-left: 10%;
+}
+#solo .row .col .songs a{
+  font-size: .9rem;
+    display: inline-block;
+    text-decoration: none;
+    color:#b7b3b3;
+    font-family: heiti;
+     -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+#solo .row .col .songs a:hover{
+  font-size: 1.4rem;
+ 
+  color: rgb(247, 247, 247);
+  font-family: heiti;
+}
+#solo .row .col span{
+    color: #080808;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.7rem;
+}
+video::-webkit-media-controls-enclosure{ 
+    display: none;
+}
+  #end {
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    text-align: center;
+  }
+  #end .final {
+    margin-top: 5%;
+    text-align: center;
+    background-image: url(./shouye.jpg);
+    border-color: transparent;
+   
+  }
+ #end .final h0{
+  font-family:Georgia, 'Times New Roman', Times, serif
+  ;
+    font-size: 7rem;
+    color: #e1e1e1;
+}
+#end .final h0 span{
+  display: inline-block;
+  font-size: 11rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+#end .final h0 span:hover{
+  font-size: 13rem;
+  
+    text-shadow: 5px 5px 10px  #fffafa;
+    opacity: 0.7;
+}

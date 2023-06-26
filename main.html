@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BaekHyun</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./videoplayer.js"></script>
+    <script type="text/javascript" src="http://mediaplayer.yahoo.com/js"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./maincss.css">
+</head>
+<body>
+    <div class="sybtn">
+    <a href="#" >首页</a>
+    </div>
+    
+    <section class="header">
+        <nav>
+          <h2>BaekHyun<span> 边伯贤</span></h2>
+          <div id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <a href="#">首页</a>
+            <a href="#introduction">简介</a>
+            <a href="#member">团队出道</a>
+            <a href="#solo">SOLO出道</a> 
+            <a href="#end">尾页</a>
+          </div>
+          <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+          <h1>EXO成员&nbsp;<span class="pulser">&</span>&nbsp;SOLO歌手</h1>
+          <br><br><br>
+          <p>"Be Brave Be Humble"</p>
+          <br><br><br>
+          <a href="#introduction" class="hero-btn">CONTINUE</a>
+        </div>
+      </section>
+
+
+      <section id="introduction">
+        <h1>—简介—</h1>
+        <br>
+        <p style="color: #777;">边伯贤，艺名BAEKHYUN，1992年5月6日生于韩国京畿道富川市，韩国男歌手、演员，男子演唱组合EXO、EXO-K、EXO-CBX、SuperM成员。</p>
+        <br>
+        <div class="row">
+          <div class="col" style="background-image: url(./chudao.jpg);">
+            <h3>早年经历</h3>
+            <p> 边伯贤在学生时期曾多次作为学生代表在校级舞台上表演。2011年，边伯贤考韩国艺术大学时，在考场被星探发掘，后来通过SM Casting System进入S.M Entertainment并成为练习生。</p>
+          </div>
+          <div class="col" style="background-image: url(./zuopin.jpg);">
+            <h3>演艺经历</h3>
+            <p>·2012年4月8日，随EXO-K发行首张迷你专辑《MAMA》，并以EXO的子团体EXO-K主唱身份正式出道。
+                <br>·2019年7月10日，发布首张个人专辑《City Lights》SOLO出道。
+                <br>·同年10月，作为SuperM组合成员在美国出道。
+                <br>·2020年5月25日，发布个人专辑《Delight - The 2nd Mini Album》达到百万销量。
+                <br>·2021年3月30日，发行第三张迷你专辑《Bambi》,成为唯一一个达到双百万销量的SOLO男歌手。
+            </p>
+          </div>
+          <div class="col" style="background-image: url(./yanyi.jpeg);">
+            <h3>主要作品</h3>
+            <p> 《City Lights》<br>《Delight》<br>《Bambi》<br>《Get You Alone》<br>……</p>
+          </div>
+         
+        </div>
+        <br><br>
+        <a href="#member" class="hero-btn">CONTINUE</a>
+      </section>
+      <section id="member">
+        <h1>—团队出道—</h1>
+        <p>2012/04/08 <span>      ·     </span>作为团队主唱出道</p>
+        <div class="row">
+            <p0>-点击播放键播放视频-</p0>
+              <iframe  src="//player.bilibili.com/player.html?aid=6758164&bvid=BV1Qs41147qL&cid=11005280&page=1&autoplay=0" loading="lazy" frameborder="0" width="1300" height="550" > </iframe>
+        </div>
+        <br>
+        <a href="#solo" class="hero-btn">CONTINUE</a>
+      </section>
+
+
+      <section id="solo">
+        <h1>—SOLO出道—</h1>
+        <p>双百万男SOLO</p>
+        <div class="row">
+          <div class="col" style="margin-top: 1%; ">
+            <video  poster="./citylights.jpg"  width="1200" height="500" controls loop>
+                <source src="unmv.mp4" type="video/mp4">
+            </video>
+            <div class="songs">
+              <p title="第一张mini SOLO专辑"><br><br><br><span>City Lights</span><br></span></p><br>
+              <a href="./music/UN Village.mp3" class="listen" title="播放">01 UN Village</a><br><br>
+              <a href="./music/Stay Up.mp3" class="listen"title="播放">02 Stay Up</a><br><br>
+              <a href="./music/Betcha.mp3" class="listen"title="播放">03 Betcha</a><br><br>
+              <a href="./music/Ice Queen.mp3" class="listen"title="播放">04 Ice Queen</a><br><br>
+              <a href="./music/Diamond.mp3" class="listen"title="播放">05 Diamond</a><br><br>
+              <a href="./music/Psycho.mp3" class="listen"title="播放">06 Psycho(Bonus Track)</a>
+            </div>
+          </div>
+          <br>
+          <div class="col" >
+            <video poster="delight.jpg" width="1200" height="500" controls>
+                <source src="candymv.mp4" type="video/mp4">
+            </video>
+            <div class="songs">
+              <p title="第二张mini SOLO专辑"><br><br><br><span>Delight</span><br></span></p><br>
+              <a href="./music/Candy.mp3" class="listen"title="播放">01 Candy</a><br><br>
+              <a href="./music/R U Ridin'_.mp3" class="listen"title="播放">02 R U Ridin'?</a><br><br>
+              <a href="./music/Bungee.mp3" class="listen"title="播放">03 Bungee</a><br><br>
+              <a href="./music/Underwater.mp3" class="listen"title="播放">04 Underwater</a><br><br>
+              <a href="./music/Poppin'.mp3" class="listen"title="播放">05 Poppin'</a><br><br>
+              <a href="./music/Ghost.mp3" class="listen"title="播放">06 Ghost</a><br><br>
+              <a href="./music/Love Again.mp3" class="listen"title="播放">07 Love Again</a>
+            </div>
+          </div>
+          <div class="col">
+            <video poster="bambi.jpg" width="1200" height="500" controls>
+                <source src="bambimv.mp4" type="video/mp4">
+            </video>
+              <div class="songs">
+                <p title="第三张mini SOLO专辑"><br><br><br><span>Bambi</span><br></span></p><br>
+                <a href="./music/Love Scene.mp3" class="listen"title="播放">01 Love Scence</a><br><br>
+                <a href="./music/Bambi.mp3" class="listen"title="播放">02 Bambi</a><br><br>
+                <a href="./music/All I Got.mp3" class="listen"title="播放">03 All I Got</a><br><br>
+                <a href="./music/Amusement Park.mp3" class="listen"title="播放">04 Amusement Park</a><br><br>
+                <a href="./music/Privacy.mp3" class="listen"title="播放">05 Privacy</a><br><br>
+                <a href="./music/Cry For Love.mp3" class="listen"title="播放">06 Cry For Love</a>
+              </div>
+          </div>
+        </div>
+        <br><br><br>
+        <a href="#end" class="hero-btn">CONTINUE</a>
+      </section>
+
+     <section id="end">
+
+        <h1>—END—</h1>
+        <p>更多作品未完待续…</p>
+        <div class="final" >
+          <h0>FEARLESS <br><span> BAEKHYUN</span></h0>
+        </div>
+        <br><br><br>
+        <a href="" class="hero-btn">BACK</a>
+      </section>
+    
+    
+      <script>
+        var navLinks = document.getElementById('navLinks');
+           
+        function showMenu() {
+          navLinks.style.right = '0';
+          navLinks.addEventListener('click',function(){
+            hideMenu();
+          })
+          
+        }
+        function hideMenu() {
+          navLinks.style.right = '-30%';
+        }
+
+       
+      </script>
+    
+    </body>
+</html>                    
